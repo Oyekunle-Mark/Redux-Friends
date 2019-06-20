@@ -6,6 +6,8 @@ const friendsReducer = (state = [], action) => {
       return action.payload;
     case actionTypes.GET_FRIENDS:
       return action.payload;
+    case actionTypes.DELETE_FRIEND:
+      return action.payload;
     default:
       return state;
   }

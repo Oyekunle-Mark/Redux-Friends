@@ -46,3 +46,15 @@ export const login = (username, password) => dispatch => {
     )
     .catch(err => console.log(err.message));
 };
+
+export const deleteFriend = id => dispatch => {
+  axiosImproved()
+    .delete(`http://localhost:5000/api/friends/${id}`)
+    .then(res =>
+      dispatch({
+        type: actionTypes.DELETE_FRIEND,
+        payload: res.data,
+      }),
+    )
+    .catch(err => console.log(err.message));
+};
