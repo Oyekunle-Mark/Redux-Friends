@@ -10,6 +10,14 @@ const StyledForm = styled.form`
 
   margin: 50px;
 
+  h3 {
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
   input {
     border: 1px solid rgb(14, 13, 13);
     width: 300px;
@@ -46,6 +54,7 @@ const Form = ({ login, history }) => {
 
   return (
     <StyledForm onSubmit={handleSubmit}>
+      <h3>Sign In</h3>
       <input type="text" placeholder="username" ref={inputValue} />
       <input type="password" placeholder="password" ref={passwordValue} />
       <button type="submit">Login</button>
