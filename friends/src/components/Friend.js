@@ -2,7 +2,10 @@ import React from 'react';
 
 const Friend = ({ friend }) => (
   <div>
-    {friend.name}
+    <h4>
+      {friend.name}, <span>{friend.age}</span>
+    </h4>
+    <p>{friend.email}</p>
   </div>
 );
 

@@ -18,7 +18,7 @@ const CreateFriend = ({ createFriend }) => {
     <form onSubmit={handleSubmit}>
       <input type="text" placeholder="name" ref={name} />
       <input type="number" placeholder="age" ref={age} />
-      <input type="email" placeholder="location" ref={email} />
+      <input type="email" placeholder="email" ref={email} />
       <button type="submit">Add Friend</button>
     </form>
   );
