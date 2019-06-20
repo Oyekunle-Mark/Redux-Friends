@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import appStateReducer from './appStateReducer';
+import appStateReducer from './loginReducer';
 import friendsReducer from './friendsReducer';
 
 const rootReducer = combineReducers({

@@ -18,7 +18,7 @@ const Form = ({ login, history }) => {
     <form onSubmit={handleSubmit}>
       <input type="text" ref={inputValue} />
       <input type="text" ref={passwordValue} />
-      <button type="submit">Submit</button>
+      <button type="submit">Login</button>
     </form>
   );
 };

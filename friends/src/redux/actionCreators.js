@@ -34,11 +34,13 @@ export const getFriends = () => dispatch => {
 };
 
 export const login = (username, password) => dispatch => {
+  dispatch({ type: actionTypes.LOGGING_IN });
+
   axios
     .post('http://localhost:5000/api/login', { username, password })
     .then(res =>
       dispatch({
-        type: actionTypes.LOGGING_IN,
+        type: actionTypes.LOGGED_IN,
         payload: res.data.payload,
       }),
     )
