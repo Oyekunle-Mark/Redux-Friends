@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { arrayOf, object, func } from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
@@ -18,6 +19,11 @@ const Friends = ({ friends, getFriends }) => {
 
   return <StyledFriends>{friendList}</StyledFriends>;
 };
+
+Friends.propTypes = {
+  friends: arrayOf(object).isRequired,
+  getFriends: func.isRequired,
+}
 
 const mapStateToProps = state => ({
   friends: state.friends,

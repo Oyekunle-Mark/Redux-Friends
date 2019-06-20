@@ -25,7 +25,7 @@ const StyledForm = styled.form`
   }
 
   button:hover {
-    cursor:pointer;
+    cursor: pointer;
   }
 `;
 

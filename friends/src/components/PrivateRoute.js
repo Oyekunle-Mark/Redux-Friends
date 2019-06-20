@@ -1,4 +1,5 @@
 import React from 'react';
+import { object } from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
 const PrivateRoute = ({
@@ -20,5 +21,10 @@ const PrivateRoute = ({
     }
   />
 );
+
+PrivateRoute.propTypes = {
+  friends: object.isRequired,
+  createFriend: object.isRequired,
+};
 
 export default PrivateRoute;

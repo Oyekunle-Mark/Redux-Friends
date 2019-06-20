@@ -1,7 +1,7 @@
 import actionTypes from '../actionTypes';
 
 const appStateReducer = (state = false, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case actionTypes.LOGGING_IN:
       return true;
     case actionTypes.LOGGED_IN:
@@ -9,6 +9,6 @@ const appStateReducer = (state = false, action) => {
     default:
       return state;
   }
-}
+};
 
 export default appStateReducer;

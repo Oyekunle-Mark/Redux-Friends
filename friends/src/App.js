@@ -23,7 +23,12 @@ function App() {
     <Router>
       <StyledApp>
         <Header />
-        <PrivateRouter exact path="/" friends={Friends} createFriend={CreateFriend} />
+        <PrivateRouter
+          exact
+          path="/"
+          friends={Friends}
+          createFriend={CreateFriend}
+        />
         <Route path="/login" component={Login} />
       </StyledApp>
     </Router>

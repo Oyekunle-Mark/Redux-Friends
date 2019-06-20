@@ -1,7 +1,7 @@
 import actionTypes from '../actionTypes';
 
 const friendsReducer = (state = [], action) => {
-  switch(action.type) {
+  switch (action.type) {
     case actionTypes.CREATE_FRIEND:
       return action.payload;
     case actionTypes.GET_FRIENDS:

@@ -1,4 +1,5 @@
 import React from 'react';
+import { object, func } from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
@@ -35,7 +36,7 @@ const StyledFriend = styled.div`
   }
 
   div button:hover {
-    cursor:pointer;
+    cursor: pointer;
   }
 `;
 
@@ -50,6 +51,11 @@ const Friend = ({ friend, deleteFriend }) => (
     </div>
   </StyledFriend>
 );
+
+Friend.propTypes = {
+  friend: object.isRequired,
+  deleteFriend: func.isRequired,
+}
 
 export default connect(
   null,
