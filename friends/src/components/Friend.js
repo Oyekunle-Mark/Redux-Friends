@@ -25,6 +25,10 @@ const StyledFriend = styled.div`
     margin-top: 10px;
   }
 
+  div p {
+    color: white;
+  }
+
   div button {
     margin-top: 10px;
     height: 25px;
