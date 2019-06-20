@@ -5,20 +5,19 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
 
-  width: 100%;
-  padding: 15px 20px;
+  width: 100vw;
   background: rgb(5, 5, 5);
 
   img {
     width: 40px;
     height: 40px;
+    margin: 20px;
   }
 
   h1 {
     font-family: 'Kaushan Script', cursive;
     font-size: 35px;
-    margin-left: 15px;
-    color: rgb(245, 30, 30);
+    color: white;
   }
 `;
 

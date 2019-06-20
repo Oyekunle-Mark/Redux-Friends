@@ -11,8 +11,8 @@ const PrivateRoute = ({
     render={props =>
       localStorage.getItem('friendAppToken') ? (
         <div>
-          <Friends {...props} />
           <CreateFriend {...props} />
+          <Friends {...props} />
         </div>
       ) : (
         <Redirect to="/login" />
